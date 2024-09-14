@@ -1,0 +1,22 @@
+[
+  {
+    "Id": 1,
+    "Name": "Keyboards"
+  },
+  {
+    "Id": 2,
+    "Name": "Mice"
+  },
+  {
+    "Id": 3,
+    "Name": "Monitors"
+  },
+  {
+    "Id": 4,
+    "Name": "Headsets"
+  },
+  {
+    "Id": 5,
+    "Name": "PC Cases"
+  }
+]

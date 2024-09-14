@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="toast.css">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="https://kit.fontawesome.com/b07f5ce824.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <header>
+        <section class="content">
+            <h1>Get Inspired</h1>
+            <p>Browsing for your next PC pics.</p>
+        </section>
+
+        <section class="filters">
+            <div class="filter sort-filter">
+                <label for="sort"></label>
+                <select name="sort" id="sort">
+                    <option value="none">No Sort</option>
+                    <option value="keyboard">Price Ascending</option>
+                    <option value="mouse">Price Descending</option>
+                </select>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="products-grid">
+            </div>
+            <div id="toast" class="toast">Product added to cart!</div>
+            <div class="pagination">
+                <button class="previous">&lt</button>
+                <h3 class="page-number">1</h3>
+                <button class="next">&gt</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="utilites.js"></script>
+    <script src="navbar.js"></script>
+    <script src="products.js"></script>
+</body>
+
+</html>

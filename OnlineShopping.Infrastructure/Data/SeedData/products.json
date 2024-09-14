@@ -1,0 +1,110 @@
+[
+  {
+    "Id": 1,
+    "Name": "Redragon K552 Mechanical Gaming Keyboard",
+    "Description": "Compact, tenkeyless mechanical keyboard with customizable RGB backlighting.",
+    "Price": 39.99,
+    "Quantity": 100,
+    "ImageUrl": "Images/redragon-k552.jpg",
+    "CategoryId": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Corsair K95 RGB Platinum XT",
+    "Description": "High-performance mechanical keyboard with dedicated macro keys and RGB lighting.",
+    "Price": 199.99,
+    "Quantity": 50,
+    "ImageUrl": "Images/corsair-k95.jpg",
+    "CategoryId": 1
+  },
+  {
+    "Id": 3,
+    "Name": "Logitech G502 HERO High Performance Gaming Mouse",
+    "Description": "Customizable gaming mouse with HERO 25K sensor, adjustable weights, and RGB lighting.",
+    "Price": 49.99,
+    "Quantity": 200,
+    "ImageUrl": "Images/logitech-g502.jpg",
+    "CategoryId": 2
+  },
+  {
+    "Id": 4,
+    "Name": "Razer DeathAdder V2 Gaming Mouse",
+    "Description": "Ergonomic gaming mouse with Razer Optical Mouse Switches and RGB lighting.",
+    "Price": 69.99,
+    "Quantity": 150,
+    "ImageUrl": "Images/razer-deathadder-v2.jpg",
+    "CategoryId": 2
+  },
+  {
+    "Id": 5,
+    "Name": "ASUS TUF Gaming VG27AQ 27 inch Monitor",
+    "Description": "27-inch WQHD (2560x1440) IPS gaming monitor with 165Hz refresh rate and G-SYNC compatibility.",
+    "Price": 429.99,
+    "Quantity": 30,
+    "ImageUrl": "Images/asus-tuf-vg27aq.jpg",
+    "CategoryId": 3
+  },
+  {
+    "Id": 6,
+    "Name": "Acer Predator XB273K 27 inch 4K UHD Monitor",
+    "Description": "27-inch 4K UHD gaming monitor with NVIDIA G-SYNC, 144Hz refresh rate, and HDR400.",
+    "Price": 899.99,
+    "Quantity": 20,
+    "ImageUrl": "Images/acer-predator-xb273k.jpg",
+    "CategoryId": 3
+  },
+  {
+    "Id": 7,
+    "Name": "HyperX Cloud II Gaming Headset",
+    "Description": "Comfortable gaming headset with 7.1 virtual surround sound and noise-canceling microphone.",
+    "Price": 99.99,
+    "Quantity": 80,
+    "ImageUrl": "Images/hyperx-cloud-ii.jpg",
+    "CategoryId": 4
+  },
+  {
+    "Id": 8,
+    "Name": "SteelSeries Arctis 7 Wireless Gaming Headset",
+    "Description": "Wireless gaming headset with lossless 2.4 GHz wireless audio, DTS Headphone:X v2.0 surround sound.",
+    "Price": 149.99,
+    "Quantity": 60,
+    "ImageUrl": "Images/steelseries-arctis-7.jpg",
+    "CategoryId": 4
+  },
+  {
+    "Id": 9,
+    "Name": "NZXT H510 Mid Tower PC Case",
+    "Description": "Sleek and modern mid tower PC case with tempered glass side panel and cable management system.",
+    "Price": 79.99,
+    "Quantity": 40,
+    "ImageUrl": "Images/nzxt-h510.jpg",
+    "CategoryId": 5
+  },
+  {
+    "Id": 10,
+    "Name": "Corsair 4000D Airflow Mid Tower PC Case",
+    "Description": "High-performance mid tower case with excellent airflow and cable management.",
+    "Price": 94.99,
+    "Quantity": 50,
+    "ImageUrl": "Images/corsair-4000d.jpg",
+    "CategoryId": 5
+  },
+  {
+    "Id": 11,
+    "Name": "Ducky One 2 Mini RGB Mechanical Keyboard",
+    "Description": "60% mechanical keyboard with Cherry MX switches and customizable RGB backlighting.",
+    "Price": 89.99,
+    "Quantity": 70,
+    "ImageUrl": "Images/ducky-one-2-mini.jpg",
+    "CategoryId": 1
+  },
+  {
+    "Id": 12,
+    "Name": "Logitech MX Master 3 Wireless Mouse",
+    "Description": "Advanced wireless mouse with ultra-fast scrolling and customizable buttons.",
+    "Price": 99.99,
+    "Quantity": 120,
+    "ImageUrl": "Images/logitech-mx-master-3.jpg",
+    "CategoryId": 2
+  }
+]

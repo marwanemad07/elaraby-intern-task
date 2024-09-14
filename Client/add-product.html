@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="toast.css">
+    <link rel="stylesheet" href="add-product.css">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="https://kit.fontawesome.com/b07f5ce824.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main>
+        <div class="container">
+            <h2>New Product</h2>
+            <form id="add-product-form" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="price">Price</label>
+                    <input type="number" step="0.01" name="price" id="price" required min="1">
+                    <span class="error-message" id="priceError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" name="quantity" id="quantity" required min="1">
+                    <span class="error-message" id="quantityError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="category">Category</label>
+                    <select name="category" id="category" required>
+                        <option value="keyboard">Keyboard</option>
+                        <option value="mouse">Mouse</option>
+                        <option value="monitor">Monitor</option>
+                        <option value="headset">Headset</option>
+                    </select>
+                    <span class="error-message" id="categoryError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="image">Image</label>
+                    <input type="file" name="image" id="image" required>
+                    <span class="error-message" id="imageError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" required ></textarea>
+                    <span class="error-message" id="descriptionError"></span>
+                </div>
+                <span class="error-message" id="apiError"></span>
+                <button type="submit">Add Product</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="utilites.js"></script>
+    <script src="navbar.js"></script>
+    <script src="add-product.js"></script>
+</body>
+
+</html>

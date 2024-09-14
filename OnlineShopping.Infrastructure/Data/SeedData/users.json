@@ -1,0 +1,24 @@
+[
+  {
+    "FirstName": "Marwan",
+    "LastName": "Emad",
+    "UserName": "marwanemad",
+    "Street": "Hamdy Hassan",
+    "City": "Giza",
+    "ZipCode": "12035",
+    "Email": "marwanemad910@gmail.com",
+    "Password": "123456789xx",
+    "Roles": [ "Admin", "User" ]
+  },
+  {
+    "FirstName": "Eyad",
+    "LastName": "Emad",
+    "UserName": "eyademad",
+    "Street": "Hamdy Hassan",
+    "City": "Giza",
+    "ZipCode": "12035",
+    "Email": "eyademad@gmail.com",
+    "Password": "xx123456789xx",
+    "Roles": [ "User" ]
+  }
+]

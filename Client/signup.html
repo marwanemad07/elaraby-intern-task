@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="https://kit.fontawesome.com/b07f5ce824.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main>
+        <div class="signup-container">
+            <div class="signup-box">
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="First Name" required>
+                            <span class="error-message" id="firstNameError"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="firstName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Last Name" required>
+                            <span class="error-message" id="lastNameError"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter your username" required>
+                        <span class="error-message" id="usernameError"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <span class="error-message" id="passwordError"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                        <span class="error-message" id="confirmPasswordError"></span>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="street">Street</label>
+                            <input type="text" id="street" placeholder="Enter your street" required>
+                            <span class="error-message" id="streetError"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Enter your city" required>
+                            <span class="error-message" id="cityError"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="zipCode">Zip Code</label>
+                            <input type="text" id="zipCode" placeholder="Enter your zip code" required>
+                            <span class="error-message" id="zipCodeError"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <ul id="errorList" class="error-list">
+                        </ul>
+                    </div>
+                    
+                    <div class="input-group">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                    <div class="login-link">
+                        Already have an account? <a href="login.html">Log in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="utilites.js"></script>
+    <script src="navbar.js"></script>
+    <script src="signup.js"></script>
+</body>
+
+</html>

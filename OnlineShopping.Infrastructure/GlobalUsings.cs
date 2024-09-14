@@ -1,0 +1,16 @@
+﻿global using Microsoft.AspNetCore.Identity;
+global using System.ComponentModel.DataAnnotations;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using OnlineShopping.Infrastructure.Data.Models.Identity;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using OnlineShopping.Infrastructure.Data.Context;
+global using OnlineShopping.Infrastructure.Repositories.Implementations;
+global using OnlineShopping.Infrastructure.Data.Models;
+global using OnlineShopping.Infrastructure.Repositories.Interfaces;
+global using OnlineShopping.Core.Specifications;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using OnlineShopping.Infrastructure.Configurations;
+global using System.Text.Json;
+global using OnlineShopping.Infrastructure.Enums;

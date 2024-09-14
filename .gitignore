@@ -1,0 +1,17 @@
+# Build results
+obj/
+bin/
+
+# Logs
+*.log
+
+# Generated files
+*.nuget/
+
+# Temporary files
+.vs/
+
+# Config files
+appsettings.Development.json
+appsettings.*.json
+appsettings.json
