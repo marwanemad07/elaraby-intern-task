@@ -52,8 +52,7 @@ const showLoginNav = () => {
     const ul = document.getElementById('auth-links');
     ul.innerHTML = `
         <li>
-            <i class="fa-solid fa-sign-in"></i>
-            <a href="login.html">Login</a>
+            <a href="login.html"><i class="fa-solid fa-sign-in"></i> Login</a>
         </li>
     `
 }
@@ -66,16 +65,14 @@ const showAuthenticatedNav = (roles) => {
     if (roles === undefined || roles.some(role => role.toLowerCase() === 'user')) {
         ul.innerHTML += `
         <li>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <a href="cart.html">Cart</a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
         </li>
         `;
     }
 
     ul.innerHTML += `
     <li>
-        <i class="fa-solid fa-sign-out"></i>
-        <a href="login.html" class="logout">Logout</a>
+        <a href="login.html" class="logout"><i class="fa-solid fa-sign-out"></i> Logout</a>
     </li>
     `;
     if (roles != roles.some(role => role.toLowerCase() === 'admin')) {
