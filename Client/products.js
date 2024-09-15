@@ -4,6 +4,7 @@ let config;
 loadConfig().then(async (conf) => {
     config = conf;
     addPaginationButtonsEventListener();
+    addSortEventListener();
     await getProductsFromApi(1);
 });
 
@@ -53,6 +54,13 @@ const addPaginationButtonsEventListener = () => {
     });
 }
 
+const addSortEventListener = () => {
+    const sortSelect = document.getElementById('sort');
+    sortSelect.addEventListener('change', async () => {
+        await getProductsFromApi(1);
+    });
+}
+
 const showPorducts = (products) => {
     if (products.length != 0) {
         const productsGrid = document.querySelector('.products-grid');
@@ -82,11 +90,13 @@ const showPorducts = (products) => {
     });
 }
 
-const getProductsFromApi = async (pageNumber, sort, search) => {
+const getProductsFromApi = async (pageNumber) => {
     const baseApi = config.baseApiUrl;
     const absoluteApi = "product";
 
-    const response = await axios.get(`${baseApi}/${absoluteApi}?pagenumber=${pageNumber}&pagesize=${pageSize}`);
+    const sort = getSortValue();
+
+    const response = await axios.get(`${baseApi}/${absoluteApi}?pagenumber=${pageNumber}&pagesize=${pageSize}&sort=${sort}`);
     const productsRest = response.data;
     const products = productsRest.data;
 
@@ -98,4 +108,9 @@ const getProductsFromApi = async (pageNumber, sort, search) => {
     }
 
     addToCartEventListner();
+}
+
+const getSortValue = () => {
+    const sortSelect = document.getElementById('sort');
+    return sortSelect.value;
 }
